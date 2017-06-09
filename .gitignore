@@ -1,0 +1,7 @@
+project/target
+project/META-INF
+target/resolution-cache
+target/streams
+target/.history
+target/scala-2.11/classes
+.idea
