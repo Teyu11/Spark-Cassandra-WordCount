@@ -24,7 +24,7 @@ CREATE TABLE sentencesks.wordCount (
     PRIMARY KEY (word)
 );
 ```
-**4.To insert sentences into the table called semtence**
+**4.To insert sentences into the table called sentences**
 
 ```
 INSERT INTO sentences (sentence) VALUES ('Enter your sentences here');
