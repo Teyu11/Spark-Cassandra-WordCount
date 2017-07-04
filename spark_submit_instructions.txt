@@ -1,0 +1,19 @@
+//Enter the folder containing the JSON
+cd 
+cd <folder containing the JSON >
+
+................................
+Run: dcos auth login
+.......................................................
+
+curl -v -H "Authorization: token=$(dcos config show core.dcos_acs_token)" "$(dcos config show core.dcos_url)service/spark/v1/submissions/create" -d @submit.json
+
+// this is to submit a spark job
+
+................................
+
+curl -X POST -v -H "Authorization: token=$(dcos config show core.dcos_acs_token)" "$(dcos config show core.dcos_url)service/spark/v1/submissions/kill/driver-<driver id>"
+
+//this is to kill a task
+
+................................
