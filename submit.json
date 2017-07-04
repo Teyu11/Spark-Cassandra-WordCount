@@ -1,14 +1,14 @@
 {
   "action" : "CreateSubmissionRequest",
   "appArgs" : [],
-  "appResource" : "https://s3-us-west-1.amazonaws.com/shreya-dcos/WordCount1.jar",
+  "appResource" : "<URL OF THE JAR FILE>",
   "clientSparkVersion" : "2.1.1",
   "environmentVariables" : {
     "SPARK_SCALA_VERSION" : "2.11"
   },
   "mainClass" : "WordCount1",
   "sparkProperties" : {
-    "spark.jars" : "https://s3-us-west-1.amazonaws.com/shreya-dcos/WordCount1.jar",
+    "spark.jars" : "<URL OF THE JAR FILE>",
     "spark.driver.supervise" : "false",
     "spark.app.name" : "WordCount1",
     "spark.driver.memory" : "1024M",
