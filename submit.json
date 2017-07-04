@@ -1,0 +1,21 @@
+{
+  "action" : "CreateSubmissionRequest",
+  "appArgs" : [],
+  "appResource" : "https://s3-us-west-1.amazonaws.com/shreya-dcos/WordCount1.jar",
+  "clientSparkVersion" : "2.1.1",
+  "environmentVariables" : {
+    "SPARK_SCALA_VERSION" : "2.11"
+  },
+  "mainClass" : "WordCount1",
+  "sparkProperties" : {
+    "spark.jars" : "https://s3-us-west-1.amazonaws.com/shreya-dcos/WordCount1.jar",
+    "spark.driver.supervise" : "false",
+    "spark.app.name" : "WordCount1",
+    "spark.driver.memory" : "1024M",
+    "spark.mesos.executor.docker.image" : "mesosphere/spark:1.1.0-2.1.1-hadoop-2.6",
+    "spark.driver.cores" : "1",
+    "spark.submit.deployMode" : "cluster"
+    
+  }
+}
+
